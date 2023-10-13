@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Script to delete the file betty from /tmp/my_first_directory
+
+file_path="/tmp/my_first_directory/betty"
+
+# Delete the file
+rm "$file_path"
+
+# Verify the deletion
+ls "$file_path"
+

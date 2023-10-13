@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Script to create a symbolic link named __ls__ to /bin/ls in the current working directory
+
+# Create a symbolic link
+ln -s /bin/ls __ls__
+
+# Display the contents of the current directory
+ls -la
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Script to change the working directory to the previous one
+
+# Change the working directory to the previous one
+cd -
+

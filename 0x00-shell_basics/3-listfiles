@@ -1,0 +1,4 @@
+#!/bin/bash
+#list items orderly
+ls -1
+

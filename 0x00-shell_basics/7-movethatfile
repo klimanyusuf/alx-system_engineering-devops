@@ -1,0 +1,14 @@
+
+#!/bin/bash
+
+# Script to create a file named betty and move it to /tmp/my_first_directory
+
+file_path="/tmp/betty"
+destination_directory="/tmp/my_first_directory"
+
+# Create the file
+touch "$file_path"
+
+# Move the file to the destination directory
+mv "$file_path" "$destination_directory"
+

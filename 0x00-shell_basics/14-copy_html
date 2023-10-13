@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Script to copy HTML files to the parent directory if they don't exist or are newer
+
+# Get the parent directory path
+parent_dir=$(dirname "$(pwd)")
+
+# Copy HTML files
+for file in *.html; do
+    destination="$parent_dir/$file"
+    
+    # Check if the file doesn't exist in the parent directory or is newer
+    if [ ! -e "$destination" ] || [ "$file" -nt "$destination" ]; then
+        cp "$file" "$destination"
+        echo "Copied: $file to $destination"
+    else
+        echo "Skipped: $file (already exists and is up to date)"
+    fi
+done
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+#script to display current directory contents including hidden files
+
+ls -la

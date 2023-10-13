@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Script to create a file named iamafile in /tmp and print its type
+
+# Create a file named iamafile in /tmp
+echo "This is a sample file." > /tmp/iamafile
+
+# Print the type of the file
+file /tmp/iamafile
+
+
