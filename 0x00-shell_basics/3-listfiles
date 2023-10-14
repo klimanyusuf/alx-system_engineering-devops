@@ -1,2 +1,3 @@
 #!/bin/bash
 ls -l | awk '{total += $5; print} END {print "total", total/1024, "KB"}'
+
